@@ -1,0 +1,35 @@
+
+-- create
+CREATE TABLE students (
+
+  Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+ 
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  
+  address TEXT NOT NULL
+
+);
+
+
+
+-- insert
+INSERT INTO students (name, age, address) VALUES ('Илья', '30', 'Самара');
+
+INSERT INTO students (name, age, address) VALUES ('Роман', '25', 'Москва');
+
+INSERT INTO students (name, age, address) VALUES ('Вероника', '26', 'Омск');
+
+INSERT INTO students (name, age, address) VALUES ('Алёна', '31', 'Самара');
+
+INSERT INTO students (name, age, address) VALUES ('Светлана', '28', 'Москва');
+
+INSERT INTO students (name, age, address) VALUES ('Павел', '32', 'Новосибирск');
+
+INSERT INTO students (name, age, address) VALUES ('Виктор', '35', 'Москва');
+
+INSERT INTO students (name, age, address) VALUES ('Ирина', '29', 'Москва');
+
+
+-- fetch 
+SELECT name FROM students WHERE address = 'Москва' AND age BETWEEN 19 AND 30;
